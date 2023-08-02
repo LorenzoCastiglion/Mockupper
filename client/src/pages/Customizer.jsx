@@ -10,6 +10,8 @@ import { EditorTabs, FilterTabs, DecalTypes } from '../config/constants';
 import { fadeAnimation, slideAnimation } from '../config/motion';
 import { AIPicker, ColorPicker, CustomButton, FilePicker, Tab } from '../components';
 
+
+
 const Customizer = () => {
   const snap = useSnapshot(state);
 
@@ -143,14 +145,17 @@ const Customizer = () => {
 
           <motion.div
             className="absolute z-10 top-5 right-5"
-            {...fadeAnimation}
+            {...slideAnimation('right')}
           >
-            <CustomButton
-              type="outline"
-              title="Go Back"
-              handleClick={() => state.intro = true}
-              customStyles="w-fit px-4 py-2.5 font-bold text-sm"
-            />
+           
+           
+              <CustomButton
+                type="outline"
+                title="Go Back"
+                handleClick={() => state.intro = true}
+                customStyles="w-fit px-4 py-2.5 font-bold text-sm"
+              />
+           
           </motion.div>
 
           <motion.div

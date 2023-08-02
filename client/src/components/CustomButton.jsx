@@ -11,8 +11,10 @@ import  { getContrastingColor } from '../config/helpers';
 
         if(type === 'filled'){
             return {
-                backgroundColor: snap.color,
-                color: getContrastingColor(snap.color)
+                // backgroundColor: snap.color,
+                color: getContrastingColor(snap.color),
+                border: `2px solid ${snap.color}`,
+                
             }
         }else if(type === "outline"){
             return {

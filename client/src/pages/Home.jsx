@@ -38,19 +38,19 @@ const Home = () => {
 
             <motion.div {...headContainerAnimation}>
 
-              <h1 className='head-text'>LET'S <br className='xl:block hidden' /> DO IT!</h1>
+              <h1 className='head-text'>MOCK <br className='xl:block hidden' /> UP IT!</h1>
 
             </motion.div>
 
             <motion.div {...headContainerAnimation} className='flex flex-col gap-5'>
 
-              <p className='max-w-md font-normal text-gray-600 text-base' >Crea un mockup personalizzato della tua T-shirt con il nostro tool 3-D. <strong>Sfoga la tua fantasia</strong> {''} e mostra il tuo stile. </p>
+              <p className='max-w-md font-medium uppercase text-gray-600 text-lg' >Crea un mockup personalizzato della tua T-shirt con il nostro tool 3-D. <br></br> <strong>Sfoga la tua fantasia</strong> {''} e mostra il tuo stile. </p>
 
               <CustomButton
-                type="filled"
+                type="outline"
                 title="Personalizza"
                 handleClick={() => state.intro = false}
-                customStyle="w-fit px-4 py-2.5 font-bold text-sm" />
+                customStyle="w-fit px-4 py-2.5 font-bold text-sm " />
 
             </motion.div>
 
